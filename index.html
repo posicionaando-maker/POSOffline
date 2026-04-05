@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mini POS Offline 5.0</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Mini POS Offline 5.0</h1>
+<div id="productos">
+  <h2>Productos</h2>
+  <div id="lista-productos"></div>
+  <h3>Agregar producto</h3>
+  <input type="text" id="nuevo-nombre" placeholder="Nombre">
+  <input type="number" id="nuevo-precio" placeholder="Precio" step="0.01">
+  <button onclick="agregarNuevoProducto()">Agregar</button>
+</div>
+<h2>Carrito</h2>
+<ul id="carrito"></ul>
+<p>Total: $<span id="total">0</span></p>
+<button onclick="cobrar()">Cobrar</button>
+<button onclick="reiniciar()">Reiniciar</button>
+<button onclick="exportarCSV()">Exportar ventas</button>
+<h2>Historial de ventas</h2>
+<ul id="historial"></ul>
+<script src="script.js"></script>
+</body>
+</html>
